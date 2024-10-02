@@ -5,41 +5,35 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the code...'
-                // Example: For Java projects, use Maven
-                // sh 'mvn clean install'
+                
             }
         }
 
         stage('Unit and Integration Tests') {
             steps {
                 echo 'Running unit and integration tests...'
-                // Example for Python: pytest or Java: Maven test
-                // sh 'pytest'
-                // sh 'mvn test'
+                
             }
         }
 
         stage('Code Analysis') {
             steps {
                 echo 'Running static code analysis...'
-                // Example: SonarQube for static analysis
-                // sh 'sonar-scanner'
+                
             }
         }
 
         stage('Security Scan') {
             steps {
                 echo 'Performing security scan...'
-                // Example: Use Snyk or OWASP ZAP
-                // sh 'snyk test'
+                
             }
         }
 
         stage('Deploy to Staging') {
             steps {
                 echo 'Deploying to staging environment...'
-                // Example: SCP or other deployment tool
-                // sh 'scp target/myapp.jar user@staging-server:/path/to/deploy'
+                
             }
         }
 
@@ -52,7 +46,7 @@ pipeline {
         stage('Deploy to Production') {
             steps {
                 echo 'Deploying to production environment...'
-                // Example: SCP or any deployment tool for production
+                
             }
         }
     }

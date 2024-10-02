@@ -66,7 +66,7 @@ pipeline {
             emailext (
                 subject: "Jenkins Build Successful",
                 body: "The Jenkins build completed successfully.\n\nCheck the attached build log for more details.",
-                to: "anandikarnair@gmail.com",
+                to: "anandikarajeevnair@gmail.com",
                 attachLog: true // Attach the console log in case of success
             )
         }
@@ -75,7 +75,7 @@ pipeline {
             emailext (
                 subject: "Jenkins Build Failed",
                 body: "The Jenkins build failed. Please check the attached build log for more details.",
-                to: "anandikarnair@gmail.com",
+                to: "anandikarajeevnair@gmail.com",
                 attachLog: true // Attach the console log in case of failure
             )
         }
